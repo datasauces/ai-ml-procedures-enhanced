@@ -9,4 +9,4 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/ornery
+	"github.com/ornerylawn/linear"
