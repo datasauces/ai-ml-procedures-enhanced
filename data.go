@@ -12,4 +12,4 @@ import (
 	"github.com/ornerylawn/linear"
 )
 
-func LoadM
+func LoadMatrixCSV(filenam
