@@ -10,3 +10,6 @@ import (
 	"strconv"
 
 	"github.com/ornerylawn/linear"
+)
+
+func LoadM
