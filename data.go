@@ -12,4 +12,5 @@ import (
 	"github.com/ornerylawn/linear"
 )
 
-func LoadMatrixCSV(filename string) (linear.
+func LoadMatrixCSV(filename string) (linear.Matrix, error) {
+	f,
