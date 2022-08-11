@@ -14,4 +14,4 @@ import (
 
 func LoadMatrixCSV(filename string) (linear.Matrix, error) {
 	f, err := os.Open(filename)
-	if
+	if err != nil {
