@@ -18,4 +18,5 @@ func LoadMatrixCSV(filename string) (linear.Matrix, error) {
 		return nil, err
 	}
 	r := csv.NewReader(f)
-	recordLength
+	recordLength := -1
+	values := []f
