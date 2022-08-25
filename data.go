@@ -22,4 +22,4 @@ func LoadMatrixCSV(filename string) (linear.Matrix, error) {
 	values := []float64{}
 	for {
 		record, err := r.Read()
-		i
+		if err == io.E
