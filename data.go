@@ -23,4 +23,5 @@ func LoadMatrixCSV(filename string) (linear.Matrix, error) {
 	for {
 		record, err := r.Read()
 		if err == io.EOF {
-			
+			break
+		}
