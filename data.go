@@ -25,4 +25,5 @@ func LoadMatrixCSV(filename string) (linear.Matrix, error) {
 		if err == io.EOF {
 			break
 		}
-		if err != ni
+		if err != nil {
+			return ni
