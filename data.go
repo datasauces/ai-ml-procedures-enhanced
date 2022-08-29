@@ -26,4 +26,5 @@ func LoadMatrixCSV(filename string) (linear.Matrix, error) {
 			break
 		}
 		if err != nil {
-			return ni
+			return nil, err
+		}
