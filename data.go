@@ -29,3 +29,4 @@ func LoadMatrixCSV(filename string) (linear.Matrix, error) {
 			return nil, err
 		}
 		if recordLength == -1 {
+			recordLengt
