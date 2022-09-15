@@ -31,4 +31,4 @@ func LoadMatrixCSV(filename string) (linear.Matrix, error) {
 		if recordLength == -1 {
 			recordLength = len(record)
 			continue // first record is header
-		} else if len(recor
+		} else if len(record) != recordLength {
