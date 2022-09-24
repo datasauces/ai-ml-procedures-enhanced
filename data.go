@@ -32,4 +32,4 @@ func LoadMatrixCSV(filename string) (linear.Matrix, error) {
 			recordLength = len(record)
 			continue // first record is header
 		} else if len(record) != recordLength {
-			return nil, fmt.Errorf("expected record of length %d but
+			return nil, fmt.Errorf("expected record of length %d but found l
