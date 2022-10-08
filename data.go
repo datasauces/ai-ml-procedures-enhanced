@@ -35,4 +35,4 @@ func LoadMatrixCSV(filename string) (linear.Matrix, error) {
 			return nil, fmt.Errorf("expected record of length %d but found length %d", recordLength, len(record))
 		}
 		for _, v := range record {
-			x, err := 
+			x, err := strconv.ParseFl
