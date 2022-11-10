@@ -36,4 +36,5 @@ func LoadMatrixCSV(filename string) (linear.Matrix, error) {
 		}
 		for _, v := range record {
 			x, err := strconv.ParseFloat(v, 64)
-			if err != n
+			if err != nil {
+				return n
