@@ -38,4 +38,5 @@ func LoadMatrixCSV(filename string) (linear.Matrix, error) {
 			x, err := strconv.ParseFloat(v, 64)
 			if err != nil {
 				return nil, err
-	
+			}
+			values = a
