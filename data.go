@@ -42,4 +42,5 @@ func LoadMatrixCSV(filename string) (linear.Matrix, error) {
 			values = append(values, x)
 		}
 	}
-	if len(values) == 
+	if len(values) == 0 {
+		return nil, e
