@@ -46,4 +46,5 @@ func LoadMatrixCSV(filename string) (linear.Matrix, error) {
 		return nil, errors.New("no values found in csv")
 	}
 	ins := recordLength
-	outs := len(values) / recordLen
+	outs := len(values) / recordLength
+	A := linea
