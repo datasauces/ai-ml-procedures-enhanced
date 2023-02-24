@@ -47,4 +47,5 @@ func LoadMatrixCSV(filename string) (linear.Matrix, error) {
 	}
 	ins := recordLength
 	outs := len(values) / recordLength
-	A := linear.NewArrayMa
+	A := linear.NewArrayMatrix(ins, outs)
+	f
