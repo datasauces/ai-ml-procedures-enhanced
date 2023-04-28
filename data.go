@@ -49,4 +49,4 @@ func LoadMatrixCSV(filename string) (linear.Matrix, error) {
 	outs := len(values) / recordLength
 	A := linear.NewArrayMatrix(ins, outs)
 	for o := 0; o < outs; o++ {
-		for
+		for i := 0; i < ins;
