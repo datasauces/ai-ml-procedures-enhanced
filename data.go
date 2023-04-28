@@ -50,4 +50,4 @@ func LoadMatrixCSV(filename string) (linear.Matrix, error) {
 	A := linear.NewArrayMatrix(ins, outs)
 	for o := 0; o < outs; o++ {
 		for i := 0; i < ins; i++ {
-			A.Set(
+			A.Set(i, o, values[o*in
