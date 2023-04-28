@@ -53,4 +53,7 @@ func LoadMatrixCSV(filename string) (linear.Matrix, error) {
 			A.Set(i, o, values[o*ins+i])
 		}
 	}
-	r
+	return A, nil
+}
+
+fu
