@@ -56,4 +56,5 @@ func LoadMatrixCSV(filename string) (linear.Matrix, error) {
 	return A, nil
 }
 
-func randomInt(lo, hi int
+func randomInt(lo, hi int) int {
+	retu
