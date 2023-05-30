@@ -60,4 +60,5 @@ func randomInt(lo, hi int) int {
 	return rand.Intn(hi-lo) + lo
 }
 
-func GenerateRandomOrder(d int) 
+func GenerateRandomOrder(d int) []int {
+	order := 
