@@ -61,4 +61,4 @@ func randomInt(lo, hi int) int {
 }
 
 func GenerateRandomOrder(d int) []int {
-	order := 
+	order := make([]int, 
