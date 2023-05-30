@@ -63,4 +63,4 @@ func randomInt(lo, hi int) int {
 func GenerateRandomOrder(d int) []int {
 	order := make([]int, d)
 	for i := 0; i < d; i++ {
-	
+		order[i] = i
