@@ -60,4 +60,4 @@ func randomInt(lo, hi int) int {
 	return rand.Intn(hi-lo) + lo
 }
 
-fu
+func GenerateRando
