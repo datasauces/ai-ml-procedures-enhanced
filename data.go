@@ -65,4 +65,4 @@ func GenerateRandomOrder(d int) []int {
 	for i := 0; i < d; i++ {
 		order[i] = i
 	}
-	for i := 
+	for i := 0; i < d; i++ {
