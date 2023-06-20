@@ -70,3 +70,6 @@ func GenerateRandomOrder(d int) []int {
 		order[i], order[j] = order[j], order[i]
 	}
 	return order
+}
+
+func swap
