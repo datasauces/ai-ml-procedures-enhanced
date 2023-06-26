@@ -72,4 +72,4 @@ func GenerateRandomOrder(d int) []int {
 	return order
 }
 
-func swapRows(A linear.Matrix
+func swapRows(A linear.Matrix, a, b, ins 
