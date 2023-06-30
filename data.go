@@ -74,4 +74,4 @@ func GenerateRandomOrder(d int) []int {
 
 func swapRows(A linear.Matrix, a, b, ins int) {
 	for i := 0; i < ins; i++ {
-	
+		tmp := A.Get(i
