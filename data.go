@@ -78,3 +78,6 @@ func swapRows(A linear.Matrix, a, b, ins int) {
 		A.Set(i, a, A.Get(i, b))
 		A.Set(i, b, tmp)
 	}
+}
+
+func ShuffleRo
