@@ -82,4 +82,5 @@ func swapRows(A linear.Matrix, a, b, ins int) {
 
 func ShuffleRows(A linear.Matrix, order []int) {
 	ins, outs := A.Shape()
-	location := make([]in
+	location := make([]int, outs)
+	for o
