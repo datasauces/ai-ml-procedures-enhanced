@@ -80,4 +80,4 @@ func swapRows(A linear.Matrix, a, b, ins int) {
 	}
 }
 
-func ShuffleRows(A linear.
+func ShuffleRows(A linear.Matrix, order []in
