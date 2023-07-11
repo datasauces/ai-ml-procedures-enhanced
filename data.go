@@ -86,4 +86,4 @@ func ShuffleRows(A linear.Matrix, order []int) {
 	for o := 0; o < outs; o++ {
 		location[o] = o
 	}
-	for d
+	for dst, src := r
