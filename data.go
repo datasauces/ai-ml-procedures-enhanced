@@ -88,4 +88,4 @@ func ShuffleRows(A linear.Matrix, order []int) {
 	}
 	for dst, src := range order {
 		srcLoc := location[src]
-		swapRow
+		swapRows(A, dst, srcLoc
