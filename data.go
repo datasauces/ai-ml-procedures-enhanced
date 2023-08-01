@@ -90,3 +90,7 @@ func ShuffleRows(A linear.Matrix, order []int) {
 		srcLoc := location[src]
 		swapRows(A, dst, srcLoc, ins)
 		location[dst], location[src] = srcLoc, dst
+	}
+}
+
+func SplitRow
