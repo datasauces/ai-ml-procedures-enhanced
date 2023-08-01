@@ -93,4 +93,4 @@ func ShuffleRows(A linear.Matrix, order []int) {
 	}
 }
 
-func SplitRow
+func SplitRows(A linear.Matrix
