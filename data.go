@@ -94,4 +94,4 @@ func ShuffleRows(A linear.Matrix, order []int) {
 }
 
 func SplitRows(A linear.Matrix, hi int) (top, bottom linear.Matrix) {
-	ins, outs
+	ins, outs := A.Shap
