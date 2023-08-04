@@ -95,4 +95,4 @@ func ShuffleRows(A linear.Matrix, order []int) {
 
 func SplitRows(A linear.Matrix, hi int) (top, bottom linear.Matrix) {
 	ins, outs := A.Shape()
-	return linear.Slice(A, 0, ins
+	return linear.Slice(A, 0, ins, 0, hi), linea
