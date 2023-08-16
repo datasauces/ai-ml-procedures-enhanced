@@ -18,3 +18,12 @@ func LinearGaussianMaximumLikelihoodEstimate(X linear.Matrix, y linear.Vector) l
 // many inputs, by selecting from the family of linear models. Given a
 // vectorized dataset, where each row is a data point, it finds the
 // linear combination of X's columns (input features) that best
+// matches y (known outputs). Applying the learned linear combination
+// to a new input point provides a good estimate of the real process'
+// unknown output value if the real process is indeed approximately
+// linear.
+func LinearRegression(X linear.Matrix, y linear.Vector) linear.Vector {
+	// Assume that the data-generating process is actually linear but
+	// with Gaussian error.
+	return LinearGaussianMaximumLikelihoodEstimate(X, y)
+}
