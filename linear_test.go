@@ -7,4 +7,4 @@ import (
 	"github.com/ornerylawn/linear"
 )
 
-func Exp
+func ExpectFloat(expec
