@@ -4,4 +4,7 @@ import (
 	"math"
 	"testing"
 
-	"github.com/ornerylawn/line
+	"github.com/ornerylawn/linear"
+)
+
+func Exp
