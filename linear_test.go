@@ -7,4 +7,4 @@ import (
 	"github.com/ornerylawn/linear"
 )
 
-func ExpectFloat(expec
+func ExpectFloat(expect, got float
