@@ -7,4 +7,5 @@ import (
 	"github.com/ornerylawn/linear"
 )
 
-func ExpectFloat(expect, got float64, t *testing.T) 
+func ExpectFloat(expect, got float64, t *testing.T) {
+	if math.Abs
