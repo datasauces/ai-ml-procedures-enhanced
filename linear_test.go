@@ -13,4 +13,4 @@ func ExpectFloat(expect, got float64, t *testing.T) {
 	}
 }
 
-func 
+func ExpectInt(expect, got i
