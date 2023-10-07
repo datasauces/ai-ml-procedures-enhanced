@@ -17,3 +17,6 @@ func ExpectInt(expect, got int, t *testing.T) {
 	if got != expect {
 		t.Errorf("expected %d but got %d", expect, got)
 	}
+}
+
+func TestLinear
