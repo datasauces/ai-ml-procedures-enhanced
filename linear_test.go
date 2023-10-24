@@ -19,4 +19,5 @@ func ExpectInt(expect, got int, t *testing.T) {
 	}
 }
 
-func TestLinearRegression(t *tes
+func TestLinearRegression(t *testing.T) {
+	X := linear
