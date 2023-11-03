@@ -20,4 +20,5 @@ func ExpectInt(expect, got int, t *testing.T) {
 }
 
 func TestLinearRegression(t *testing.T) {
-	X := linear
+	X := linear.NewArrayMatrix(2, 2)
+	
