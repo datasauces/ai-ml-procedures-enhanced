@@ -26,4 +26,5 @@ func TestLinearRegression(t *testing.T) {
 	X.Set(0, 1, 1)
 	X.Set(1, 1, 2)
 
-	y := linear.NewA
+	y := linear.NewArrayVector(2)
+	
