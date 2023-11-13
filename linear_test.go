@@ -28,4 +28,6 @@ func TestLinearRegression(t *testing.T) {
 
 	y := linear.NewArrayVector(2)
 	y.Set(0, 6)
-	y.Set(1, 
+	y.Set(1, 0)
+
+	theta_hat :
