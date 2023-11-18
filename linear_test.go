@@ -30,4 +30,6 @@ func TestLinearRegression(t *testing.T) {
 	y.Set(0, 6)
 	y.Set(1, 0)
 
-	theta_hat := LinearRegre
+	theta_hat := LinearRegression(X, y)
+
+	E
