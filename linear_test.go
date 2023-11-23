@@ -32,4 +32,4 @@ func TestLinearRegression(t *testing.T) {
 
 	theta_hat := LinearRegression(X, y)
 
-	E
+	ExpectInt(2, t
