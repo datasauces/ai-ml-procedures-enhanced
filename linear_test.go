@@ -33,4 +33,4 @@ func TestLinearRegression(t *testing.T) {
 	theta_hat := LinearRegression(X, y)
 
 	ExpectInt(2, theta_hat.Dimension(), t)
-	ExpectFloat(6, thet
+	ExpectFloat(6, theta_hat.Get(0), t)
