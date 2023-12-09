@@ -38,4 +38,5 @@ func TestLinearRegression(t *testing.T) {
 }
 
 func TestLinearRegressionNonSquare(t *testing.T) {
-	X := linear.NewArrayMatrix(2, 3
+	X := linear.NewArrayMatrix(2, 3)
+	X.Set(0, 0, 
