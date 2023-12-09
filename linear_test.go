@@ -37,4 +37,5 @@ func TestLinearRegression(t *testing.T) {
 	ExpectFloat(-3, theta_hat.Get(1), t)
 }
 
-func TestLinearRegressionNonSquare(t *testing
+func TestLinearRegressionNonSquare(t *testing.T) {
+	X := linea
