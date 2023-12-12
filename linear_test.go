@@ -42,4 +42,5 @@ func TestLinearRegressionNonSquare(t *testing.T) {
 	X.Set(0, 0, 1)
 	X.Set(1, 0, 0)
 	X.Set(0, 1, 1)
-	X.Set(1, 1
+	X.Set(1, 1, 2)
+	X.Set(0
