@@ -47,4 +47,5 @@ func TestLinearRegressionNonSquare(t *testing.T) {
 	X.Set(1, 2, 1)
 
 	y := linear.NewArrayVector(3)
-	y
+	y.Set(0, 6)
+	y.S
