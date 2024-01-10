@@ -51,4 +51,6 @@ func TestLinearRegressionNonSquare(t *testing.T) {
 	y.Set(1, 0)
 	y.Set(2, -15)
 
-	theta_hat := LinearRegression(X,
+	theta_hat := LinearRegression(X, y)
+
+	ExpectInt(2,
