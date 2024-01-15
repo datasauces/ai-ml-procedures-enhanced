@@ -57,3 +57,5 @@ func TestLinearRegressionNonSquare(t *testing.T) {
 	ExpectFloat(6, theta_hat.Get(0), t)
 	ExpectFloat(-3, theta_hat.Get(1), t)
 }
+
+func TestLin
