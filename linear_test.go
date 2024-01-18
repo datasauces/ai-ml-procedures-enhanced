@@ -58,4 +58,5 @@ func TestLinearRegressionNonSquare(t *testing.T) {
 	ExpectFloat(-3, theta_hat.Get(1), t)
 }
 
-func TestLinearRegressionBoston(t *testing.T) 
+func TestLinearRegressionBoston(t *testing.T) {
+	boston, err := 
