@@ -59,4 +59,4 @@ func TestLinearRegressionNonSquare(t *testing.T) {
 }
 
 func TestLinearRegressionBoston(t *testing.T) {
-	boston, err := LoadMatrixCSV("bos
+	boston, err := LoadMatrixCSV("boston_housing.
