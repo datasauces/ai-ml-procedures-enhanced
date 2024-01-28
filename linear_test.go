@@ -63,3 +63,4 @@ func TestLinearRegressionBoston(t *testing.T) {
 	if err != nil {
 		t.Fatal("can't read boston dataset:", err)
 	}
+	ins, outs := bos
