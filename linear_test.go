@@ -64,4 +64,4 @@ func TestLinearRegressionBoston(t *testing.T) {
 		t.Fatal("can't read boston dataset:", err)
 	}
 	ins, outs := boston.Shape()
-	ExpectIn
+	ExpectInt(ins, 14, t)
