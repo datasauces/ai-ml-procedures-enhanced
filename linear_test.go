@@ -65,4 +65,6 @@ func TestLinearRegressionBoston(t *testing.T) {
 	}
 	ins, outs := boston.Shape()
 	ExpectInt(ins, 14, t)
-	ExpectInt(out
+	ExpectInt(outs, 506, t)
+
+	X :
