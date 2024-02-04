@@ -67,4 +67,5 @@ func TestLinearRegressionBoston(t *testing.T) {
 	ExpectInt(ins, 14, t)
 	ExpectInt(outs, 506, t)
 
-	X := linear.Slice(boston, 0, ins-1, 0, o
+	X := linear.Slice(boston, 0, ins-1, 0, outs)
+	y := lin
