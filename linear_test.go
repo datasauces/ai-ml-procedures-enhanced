@@ -70,4 +70,6 @@ func TestLinearRegressionBoston(t *testing.T) {
 	X := linear.Slice(boston, 0, ins-1, 0, outs)
 	y := linear.VectorFromColumn(linear.Slice(boston, ins-1, ins, 0, outs))
 
-	theta_hat := LinearRegressi
+	theta_hat := LinearRegression(X, y)
+
+	// tensorflow
