@@ -73,4 +73,4 @@ func TestLinearRegressionBoston(t *testing.T) {
 	theta_hat := LinearRegression(X, y)
 
 	// tensorflow
-	ExpectFloat(-9
+	ExpectFloat(-9.28965170
