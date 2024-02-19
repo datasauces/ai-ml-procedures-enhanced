@@ -75,4 +75,5 @@ func TestLinearRegressionBoston(t *testing.T) {
 	// tensorflow
 	ExpectFloat(-9.28965170e-02, theta_hat.Get(0), t)
 	ExpectFloat(4.87149552e-02, theta_hat.Get(1), t)
-	ExpectFloat(-4.05997958e-03, theta_hat.Get(
+	ExpectFloat(-4.05997958e-03, theta_hat.Get(2), t)
+	Expe
