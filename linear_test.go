@@ -80,4 +80,4 @@ func TestLinearRegressionBoston(t *testing.T) {
 	ExpectFloat(-2.86843637e+00, theta_hat.Get(4), t)
 	ExpectFloat(5.92814778e+00, theta_hat.Get(5), t)
 	ExpectFloat(-7.26933458e-03, theta_hat.Get(6), t)
-	ExpectFloa
+	ExpectFloat(-9.68514157e-0
