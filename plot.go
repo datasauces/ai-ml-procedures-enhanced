@@ -28,3 +28,14 @@ func ColorFromRaster(c color.Color) Color {
 		(float64(r) / alpha) / 255.0,
 		(float64(g) / alpha) / 255.0,
 		(float64(b) / alpha) / 255.0,
+		alpha,
+	}
+}
+
+type Point struct {
+	X, Y float64
+}
+
+type Canvas interface {
+	SetStrokeColor(color Color)
+	SetFillColor(color Color)
