@@ -101,3 +101,18 @@ func computeCircleAreaOnPixel(x, y int, center Point, radius float64) float64 {
 	// TODO
 	return 0.0
 }
+
+func (r *Raster) fillCircle() {
+	xlo := int(math.Floor(float64(r.penPosition.X) - r.circleRadius))
+	xhi := int(math.Ceil(float64(r.penPosition.X)+r.circleRadius)) + 1
+	ylo := int(math.Floor(float64(r.penPosition.Y) - r.circleRadius))
+	yhi := int(math.Ceil(float64(r.penPosition.Y)+r.circleRadius)) + 1
+
+	paintColor := r.fillColor
+
+	for y := ylo; y < yhi; y++ {
+		for x := xlo; x < xhi; x++ {
+			paintColor.A = computeCircleAreaOnPixel(x, y, r.penPosition, r.circleRadius)
+			blendedColor := over(paintColor, ColorFromRaster(r.image.At(x, y)))
+			r.image.Set(x, y, blendedColor)
+		}
