@@ -116,3 +116,25 @@ func (r *Raster) fillCircle() {
 			blendedColor := over(paintColor, ColorFromRaster(r.image.At(x, y)))
 			r.image.Set(x, y, blendedColor)
 		}
+	}
+}
+func (r *Raster) strokeCircle() {
+	// TODO: difficult! (one circle subtracted from another?)
+}
+func (r *Raster) DrawRectangleTo(p Point) {
+	r.fillRectangle(p)
+	r.strokeRectangle(p)
+}
+func computeRectangleAreaOnPixel(x, y int, p1, p2 Point) float64 {
+	// TODO
+	return 0.0
+}
+func (r *Raster) fillRectangle(p Point) {
+	leftX := r.penPosition.X
+	rightX := p.X
+	if rightX < leftX {
+		leftX, rightX = rightX, leftX
+	}
+	bottomY := r.penPosition.Y
+	topY := p.Y
+	if topY < bottomY {
