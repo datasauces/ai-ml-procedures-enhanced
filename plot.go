@@ -85,3 +85,19 @@ func over(paint, canvas Color) Color {
 func porterDuff(paint, canvas, both Color, pRegion, cRegion, bRegion float64) Color {
 	areaPaint := paint.A * (1.0 - canvas.A)
 	areaCanvas := canvas.A * (1.0 - paint.A)
+	areaBoth := paint.A * canvas.A
+	r := areaPaint*paint.R + areaCanvas*canvas.R + areaBoth*both.R
+	g := areaPaint*paint.G + areaCanvas*canvas.G + areaBoth*both.G
+	b := areaPaint*paint.B + areaCanvas*canvas.B + areaBoth*both.B
+	a := areaPaint*pRegion + areaCanvas*cRegion + areaBoth*bRegion
+	return Color{r, g, b, a}
+}
+
+func (r *Raster) DrawCircle() {
+	r.fillCircle()
+	r.strokeCircle()
+}
+func computeCircleAreaOnPixel(x, y int, center Point, radius float64) float64 {
+	// TODO
+	return 0.0
+}
