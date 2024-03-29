@@ -52,3 +52,24 @@ type Canvas interface {
 
 type Raster struct {
 	image                     *image.RGBA
+	strokeColor, fillColor    Color
+	strokeWidth, circleRadius float64
+	penPosition               Point
+}
+
+func NewRaster(width, height int) *Raster {
+	r := &Raster{
+		image:        image.NewRGBA(image.Rect(0, 0, width, height)),
+		strokeColor:  Color{0, 0, 0, 255},
+		fillColor:    Color{0, 0, 0, 0},
+		strokeWidth:  1.0,
+		circleRadius: 3.0,
+	}
+	r.Clear(Color{255, 255, 255, 255})
+	return r
+}
+
+func (r *Raster) SetStrokeColor(color Color)     { r.strokeColor = color }
+func (r *Raster) SetFillColor(color Color)       { r.fillColor = color }
+func (r *Raster) SetStrokeWidth(width float64)   { r.strokeWidth = width }
+func (r *Raster) SetCircleRadius(radius float64) { r.circleRadius = radius }
