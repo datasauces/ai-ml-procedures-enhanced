@@ -39,3 +39,16 @@ type Point struct {
 type Canvas interface {
 	SetStrokeColor(color Color)
 	SetFillColor(color Color)
+	SetStrokeWidth(width float64)
+	SetCircleRadius(radius float64)
+
+	MovePenTo(p Point)
+	DrawLineTo(p Point)
+	DrawCircle()
+	DrawRectangleTo(p Point)
+
+	Clear(color Color)
+}
+
+type Raster struct {
+	image                     *image.RGBA
