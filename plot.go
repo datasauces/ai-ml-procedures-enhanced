@@ -73,3 +73,15 @@ func (r *Raster) SetStrokeColor(color Color)     { r.strokeColor = color }
 func (r *Raster) SetFillColor(color Color)       { r.fillColor = color }
 func (r *Raster) SetStrokeWidth(width float64)   { r.strokeWidth = width }
 func (r *Raster) SetCircleRadius(radius float64) { r.circleRadius = radius }
+
+func (r *Raster) MovePenTo(p Point) { r.penPosition = p }
+func (r *Raster) DrawLineTo(p Point) {
+	// TODO: difficult!
+}
+func over(paint, canvas Color) Color {
+	// TODO: gamma correction.
+	return porterDuff(paint, canvas, paint, 1.0, 1.0, 1.0)
+}
+func porterDuff(paint, canvas, both Color, pRegion, cRegion, bRegion float64) Color {
+	areaPaint := paint.A * (1.0 - canvas.A)
+	areaCanvas := canvas.A * (1.0 - paint.A)
