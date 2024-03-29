@@ -138,3 +138,15 @@ func (r *Raster) fillRectangle(p Point) {
 	bottomY := r.penPosition.Y
 	topY := p.Y
 	if topY < bottomY {
+		bottomY, topY = topY, bottomY
+	}
+	xlo := int(math.Floor(leftX))
+	xhi := int(math.Ceil(rightX)) + 1
+	ylo := int(math.Floor(bottomY))
+	yhi := int(math.Ceil(topY)) + 1
+
+	paintColor := r.fillColor
+
+	for y := ylo; y < yhi; y++ {
+		for x := xlo; x < xhi; x++ {
+			paintColor.A = computeRectangleAreaOnPixel(x, y, r.penPosition, p)
