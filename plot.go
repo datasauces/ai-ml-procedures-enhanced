@@ -150,3 +150,20 @@ func (r *Raster) fillRectangle(p Point) {
 	for y := ylo; y < yhi; y++ {
 		for x := xlo; x < xhi; x++ {
 			paintColor.A = computeRectangleAreaOnPixel(x, y, r.penPosition, p)
+			blendedColor := over(paintColor, ColorFromRaster(r.image.At(x, y)))
+			r.image.Set(x, y, blendedColor)
+		}
+	}
+}
+func (r *Raster) strokeRectangle(p Point) {
+	// TODO: difficult! (one rect subtracted from another?)
+}
+
+func (r *Raster) Clear(color Color) {
+	b := r.image.Bounds()
+	for y := b.Min.Y; y < b.Max.Y; y++ {
+		for x := b.Min.X; x < b.Max.X; x++ {
+			r.image.Set(x, y, color)
+		}
+	}
+}
