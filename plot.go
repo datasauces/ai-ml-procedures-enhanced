@@ -167,3 +167,12 @@ func (r *Raster) Clear(color Color) {
 		}
 	}
 }
+
+func (r *Raster) Image() image.Image { return r.image }
+
+func LinePlot(xs, ys linear.Vector, canvas Canvas) {
+	canvas.MovePenTo(Point{xs.Get(0), ys.Get(0)})
+	for d := 1; d < xs.Dimension(); d++ {
+		canvas.DrawLineTo(Point{xs.Get(d), ys.Get(d)})
+	}
+}
