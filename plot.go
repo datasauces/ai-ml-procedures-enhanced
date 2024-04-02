@@ -176,3 +176,13 @@ func LinePlot(xs, ys linear.Vector, canvas Canvas) {
 		canvas.DrawLineTo(Point{xs.Get(d), ys.Get(d)})
 	}
 }
+
+func ScatterPlot(xs, ys linear.Vector, canvas Canvas) {
+	for d := 0; d < xs.Dimension(); d++ {
+		canvas.MovePenTo(Point{xs.Get(d), ys.Get(d)})
+		canvas.DrawCircle()
+	}
+}
+
+func Histogram(binHeights linear.Vector, binWidth float64, canvas Canvas) {
+	for d := 0; d < binHeights.Dimension(); d++ {
